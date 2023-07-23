@@ -69,10 +69,6 @@ a {
     padding: 0 40px;
 }
 
-img {
-    width: 100%;
-}
-
 p {
     color: #fff;
 }
@@ -122,6 +118,21 @@ p {
     cursor: pointer;
     transform: scale(1.1);
     transition: .50s all ease;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-25%);
+}
+
+
+
+.logo img {
+    height: auto;
+    width: 200px;
+    object-fit: contain;
 }
 
 /* Main */
@@ -351,4 +362,37 @@ footer {
 .card-content .card:hover {
     transform: scale(1.1);
     transition: .50s all ease;
+}
+
+.main-card {
+    position: relative;
+}
+
+
+.div-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.div-img .main-img {
+    position: absolute;
+    padding-top: 14%;
+    object-fit: contain;
+    left: 23%;
+    width: 700px;
+    height: auto;
+}
+
+.div-img .main-button {
+    position: absolute;
+    display: inline-block;
+    top: 56%;
+    left: 46%;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(251, 251, 220);
 }
