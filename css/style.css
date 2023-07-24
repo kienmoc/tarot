@@ -77,12 +77,8 @@ p {
 
 /* Navbar */
 .navbar {
-    background-color: transparent;
+    background-color: black;
     color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding-top: 10px;
     z-index: 100;
 }
