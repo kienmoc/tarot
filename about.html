@@ -1,46 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tarot </title>
+    <title> Everyday Tarot </title>
+
+    <link rel="icon" href="./img/android-chrome-192x192.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
-<body>
-<div class="navbar">
-        <div class="container flex">
-            <div class="logo">
-                <img src="./img/logo.png">
-                <a href="index.html"><h1>Everyday Tarot </h1></a>
-            </div>
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </div>
-    </div>
 
-    <section class="main">
-        <div class="box">
-            <h1> About Tarot </h1>
-            <div class="card grid">
-                <img src="./img/tarit_img.png" width="395px">
-                <img src="./img/tarit_text.png">
+<body>
+    <nav class="navbar navbar-expand-lg sticky fixed-top py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand nav-text">Everyday Tarot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarId">
+                <span><i class="fas fa-bars hamburger"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarId">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-            <div class="card grid special">
-                <img src="./img/source-text.png">
-                <img src="./img/source-img.png">
+        </div>
+    </nav>
+
+    <!-- <section class="testimony-class r-p bg-sec" id="testimony-id">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>Testimony</h2>
+                    <p> What people say.</p>
+                </div>
             </div>
-            <div class="card grid">
-                <img src="./img/ability_img.png">
-                <img src="./img/ability_text.png">
+            <div class="row">
+                <div class="col">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="text-center test-item">
+                                <i class="fas fa-quote-left"></i>
+                                <div><img src="./img/tarit_img.png" class="mx-auto rounded-circle test-img"></div>
+                                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                                    delectus!</p>
+                                <p class="test-name"> Jessi Walter, Ceo Muro.com</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="text-center test-item">
+                                <i class="fas fa-quote-left"></i>
+                                <div><img src="./img/source-img.png" class="mx-auto rounded-circle test-img"></div>
+                                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                                    delectus!</p>
+                                <p class="test-name"> Jessi Walter, Ceo Muro.com</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="text-center test-item">
+                                <i class="fas fa-quote-left"></i>
+                                <div><img src="./img/ability_img.png" class="mx-auto rounded-circle test-img"></div>
+                                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                                    delectus!</p>
+                                <p class="test-name"> Jessi Walter, Ceo Muro.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="about" style="background:#333;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+
+                    <div id="carouselExample" class="carousel slide r-p" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExample" data-slide-to="1"></li>
+                            <li data-target="#carouselExample" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="item">
+                                    <div class="text-center test-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div><img src="./img/tarit_img.png" class="mx-auto rounded-circle test-img ">
+                                        </div>
+                                        <p class="text-muted justify-content-center my-5" style="max-width: 700px; align-items: center;
+                                        display: inline-flex;">
+                                            Tarot là một hệ thống gồm 78 lá bài, trên mỗi lá bài là những hình ảnh, biểu
+                                            tượng, ... hàm chứa nhiều ý nghĩa về triết lý, định nghĩa, tri thức rộng lớn
+                                            về
+                                            cuộc đời, giải mã những bí ẩn chứa trong những hình ảnh đó nhằm mục đích dự
+                                            đoán
+                                            chiêm nghiệm, khai sáng hoặc tìm cảm hứng trong cuộc sống.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item">
+                                    <div class="text-center test-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div><img src="./img/source-img.png" class="mx-auto rounded-circle test-img">
+                                        </div>
+                                        <p class="text-muted justify-content-center my-5" style="max-width: 700px; align-items: center;
+                                    display: inline-flex;">
+                                            Hiện nay có rất nhiều truyền thuyết và ý kiến về xuất xứ nguồn gốc của bài
+                                            Tarot nhưng có nhiều luận điểm chứng cứ lịch sử cho thấy xuất xứ của bài
+                                            Tarot chính xác là từ miền Bắc nước Ý, vào khoảng giữa thế kỷ 15.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item">
+                                    <div class="text-center test-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div><img src="./img/ability_img.png" class="mx-auto rounded-circle test-img">
+                                        </div>
+                                        <p class="text-muted justify-content-center my-5" style="max-width: 700px; align-items: center;
+                                    display: inline-flex;">
+                                            Bài Tarot có thể được sử dụng để giải quyết các vấn đề người đọc đang gặp
+                                            phải trong cuộc sống, sự mường tượng về trí sáng tạo, thiền định, cải thiện
+                                            bản thân, là công cụ hỗ trỡ trí tuệ, bói toán, tiên tri.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col">
+                    <ul class="list-inline my-5">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p> Copyright &COPY; 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script/script.js"></script>
 </body>
+
+</html>

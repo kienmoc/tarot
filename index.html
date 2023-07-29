@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tarot </title>
+    <title> Everyday Tarot </title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/android-chrome-192x192.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    <div class="navbar">
-        <div class="container flex">
-            <div class="logo">
-                <img src="./img/logo.png">
-                <a href="index.html"><h1>Everyday Tarot </h1></a>
-            </div>
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </div>
-    </div>
-
-    <section class="main">
-        <div class="main-card grid-3">
-            <div class="card-content">
-                <div class="card card-love">
-                    <img src="./img/love.png">
-                </div>
-                <h1> Love </h1>
-            </div>
-            <div class="card-content">
-                <div class="card card-career">
-                    <img src="./img/business.jpg">
-                </div>
-                <h1> Career </h1>
-            </div>
-            
-            <div class="card-content">
-                <div class="card card-life">
-                    <img src="./img/life.jpg">
-                </div>
-                <h1> Life </h1>
+    <nav class="navbar navbar-expand-lg sticky fixed-top py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand nav-text">Everyday Tarot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarId">
+                <span><i class="fas fa-bars hamburger"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarId">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="footer grid">
-            <div class="footer-text">
-                <h1> TAROT <br> Copyright &copy; 2023 </h1>
+    </nav>
+    <div id="particles-js"></div>
+    <header class="home" id="home">
+        <div class="container-fluid header-content">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="content-box">
+                        <h4> Welcome </h4>
+                        <h1><span class="element"></span></h1>
+                        <p class="mb-4"> You can see your love, your career and your life.</p>
+                        <a href="features.html" class="btn"> Read More </a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <div class="footer-content">
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </div>
-
-            <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col">
+                    <ul class="list-inline my-5">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p> Copyright &COPY; 2023</p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="js/bootstrap.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/particles.js"></script>
     <script src="script/script.js"></script>
 </body>
+
 </html>
