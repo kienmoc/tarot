@@ -1,422 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lumanosimo&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courier+Prime:wght@400;700&family=Lato:wght@300&family=Lumanosimo&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+@font-face {
+    font-family: 'Caviar Dream';
+    src: url(../fonts/CaviarDreams.ttf);
 }
 
-:root {
-    --primary-color: #047aed;
-    --secondary-color: #1c3fa8;
-    --dark-color: #002240;
-    --light-color: #f4f4f4;
-    --success-color: #5cb85c;
-    --error-color: #d9534f;
+@font-face {
+    font-family: 'Learning Curve';
+    src: url(../fonts/LearningCurve.ttf);
 }
 
-body {
-    /* font-family: 'Poppins', sans-serif; */
+@font-face {
+    font-family: 'Moon Flower';
+    src: url(../fonts/MoonFlower.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    height: 100vh;
-    line-height: 1.6;
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Utilities */
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-
-.container {
-    max-width: 87%;
-    margin: 0 auto;
-    /* overflow: auto; */
-    padding: 0 40px;
 }
 
 p {
-    color: #fff;
-}
-
-
-
-/* Navbar */
-.navbar {
-    /* display: none; */
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
-    height: 292px;
-    background-color: #000000;
-    /* background-color: #353535; */
-    color: #fff;
-    /* padding-top: 10px; */
-    z-index: 100;
-}
-
-.navbar .flex {
-    justify-content: space-between;
-}
-
-.navbar h1 {
-    font-size: 47px;
-    margin-left: 100px;
-    transform: translate(-8%, 80%);
-    color: rgb(250, 193, 88);
-}
-
-.navbar ul {
-    display: flex;
-    transform: translate(3%, -155%);
-}
-
-.container ul a {
-    color: #fff;
-    padding: 0px;
-    margin: 0 10px;
-    font-size: 25px;
-    /* overflow: visible; */
-}
-
-.container ul a:hover {
-    color: var(--primary-color);
-    transition: .50s all ease;
-}
-
-.container h1:hover {
-    color: var(--primary-color);
-    cursor: pointer;
-    /* transform: scale(1.1); */
-    transition: .50s all ease;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-25%);
-}
-
-.logo img {
-    height: 235px;
-    transform: translate(calc(25% + 8px), -5px);
-    object-fit: contain;
-
-}
-
-/* Main */
-.main {
-    /* background-image: url(../img/sai\ đấm\ chết.JPG);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background: black;
-    height: auto;
-    width: 100%;
-    opacity: 0.9;
-}
-
-/* About */
-.box {
-    /* padding: -2px 0; */
-    margin: 0 auto;
-    max-width: 80%;
-}
-
-.box h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 55px;
-    margin-bottom: 30px;
-    letter-spacing: 5px;
-}
-
-.card {
-    /* display: none; */
-    max-width: 1480px;
-    margin: 5% auto;
-    background-color: #353535;
-    border-radius: 10px;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid;
-    transform: translateX(4%);
-    overflow: hidden;
-    height: 450px;
-}
-
-.card.grid {
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-}
-
-.box .special {
-    grid-template-columns: 2fr 1fr;
-    gap: 0px;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-}
-/* 
-.card img:last-child {
-    height: auto;
-    width: 110%;
-} */
-
-.text-content {
-    max-width: 500px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.text-content h1 {
-    font-size: 30px;
-}
-
-.card-text {
-    margin-left: 40px;
-}
-
-.card-img {
-    justify-self: flex-end;
-}
-
-.text-content p {
-    line-height: 30px;
-    font-size: 18px;
-}
-
-
-/* Contact */
-.contact {
-    color: #fff;
-    padding: 14% 0;
-    background: black;
-    text-align: center;
-    opacity: 0.9;
-    height: 86vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.contact-text {
-    margin: 0 auto;
-}
-
-.contact-text h1 {
-    font-size: 35px;
-    padding: 10px 0;
-}
-
-.contact-text p {
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    font-style: italic;
-    opacity: 0.7;
+    line-height: 30px;
+    color: #6c757d;
 }
 
-.contact-form {
-    transform: translateX(50px);
+.r-p {
+    padding: 10rem 0;
 }
 
-.contact-form input {
-    height: 60px;
-    width: 750px;
-    margin-top: 50px;
-    border-radius: 8px;
-    padding: 20px 30px;
-    font-size: 16px;
-    border: none;
+.bg-sec {
+    background: #f8f9fa;
 }
 
-.contact-form button {
-    height: 45px;
-    width: 120px;
-    border-radius: 8px;
-    border: none;
-    transform: translateX(calc(-100% - 10px));
-    background-color: var(--primary-color);
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    transform: translateX(calc(-100% - 15px)) scale(1.1);
-    transition: .50s all ease;
-}
-
-footer {
-    background: black;
-    /* padding-top: 100px; */
-}
-
-.footer {
-    padding: 25px 0;
-}
-
-.footer.grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    max-width: 75%;
-    margin: 0 auto;
-    gap: 20px;
-    /* text-align: center; */
-}
-
-.footer-text h1 {
-    font-size: 15px;
-    color: var(--light-color);
-    text-align: left;
-    font-weight: 300;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.footer-content {
-    transform: translateX(25%);
-}
-
-.footer-content a {
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-.footer-content a:hover {
-    color: var(--primary-color);
-    transition: .50s all ease;
-}
-
-.footer-social {
-    justify-self: flex-end;
-}
-
-.footer-social a {
-    font-size: 30px;
-    margin-left: 20px;
-}
-
-.footer-social i:hover {
-    transform: scale(1.2);
-    transition: .50s all ease;
-}
-
-/* Main */
-
-.main-card {
-    max-width: 1110px;
-    margin: 0 auto;
-    height: 100vh;
-    padding-top: 14%;
-}
-
-.main-card .card {
-    background-color: #fff;
-    height: 370px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.main-card .grid-3 {
-    gap: 50px;
-}
-
-.card-content .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: none;
-}
-
-.main-card .card h1 {
-    height: 100%;
-    padding-top: 80%;
+.navbar .container .nav-text {
     color: #fff;
     font-size: 40px;
 }
 
-.card-content {
-    transition: .50s all ease;
+.navbar-nav li {
+    padding-right: 20px;
 }
 
-.card-content h1 {
+.navbar-nav li a {
     color: #fff;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
-.card-content .card:hover {
-    transform: scale(1.1);
-    transition: .50s all ease;
+.navbar-nav li a:hover {
+    color: #00abf0;
+    transition: .50s all;
 }
 
-.main-card {
-    position: relative;
+.navbar .hamburger {
+    color: #fff;
 }
 
+nav.navbar.stickyadd {
+    background: #fff !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba (0, 0, 0, 0.05);
+    transition: .5s all ease-in-out;
+}
 
-.div-img {
+nav.stickyadd .navbar-brand {
+    color: #000 !important;
+    font-size: 40px;
+    transition: .5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+nav.stickyadd .hamburger {
+    color: #000;
+}
+
+/* Header */
+
+#particles-js {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
-.div-img .main-img {
-    position: absolute;
-    padding-top: 14%;
-    object-fit: contain;
-    left: 23%;
-    width: 700px;
-    height: auto;
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.div-img .main-button {
-    position: absolute;
-    display: inline-block;
-    top: 56%;
-    left: 46%;
-    border-radius: 20px;
-    padding: 15px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(251, 251, 220);
+
+.header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.content-box {
+    max-width: 1120px;
+    height: auto;
+    color: #fff;
+}
+
+.content-box h4 {
+    font-size: 35px;
+}
+
+.content-box h1 {
+    font-size: 52px;
+}
+
+.content-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+    height: 50px;
+    width: 150px;
+}
+
+.content-box a:hover {
+    color: #000;
+    background: #fff;
+    transition: 0.5s all;
+} 
+
+.content-box p {
+    color: #fff;
+}
+
+
+
+.footer {
+    background: #333;
+}
+
+.list-inline .list-inline-item a {
+    color: #fff;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.list-inline .list-inline-item a:hover {
+    color: #ee8683;
+    transform: scale(1.1);
+    
+}
+
+
+.footer p {
+    font-size: 15px;
+}
+
+.row .card-body {
+    color: #fff;
+}
+
+.row .card-body p {
+    color: #fff;
+    font-family: 'Courier Prime', monospace;
+}
+
+.item .text-muted {
+    color: #fff !important;
+}
+
+.item img {
+    height: 400px;
+    width: 400px;
+}
+
